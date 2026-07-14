@@ -5,7 +5,7 @@ export const treatmentsData = [
     icon: "Stethoscope",
     shortDescription: "Comprehensive check-ups, teeth cleanings, and fillings for optimal everyday oral health.",
     longDescription: "Our General Dentistry services form the foundation of a lifetime of healthy smiles. We focus on preventive care, early diagnosis, and conservative treatment of common dental issues. Routine exams allow us to catch dental problems before they escalate into painful, expensive emergencies. Combining advanced diagnostic technologies with a gentle, patient-centered touch, we provide teeth cleanings, cavity fillings, and oral cancer screenings in a clean and welcoming environment.",
-    image: "https://images.unsplash.com/photo-1629909613654-28e377c37b09?w=800&auto=format&fit=crop&q=80",
+    image: "/images/treatment_general.png",
     priceRange: "₹500 - ₹2,500",
     benefits: [
       "Prevents severe tooth decay and gum disease",
@@ -36,7 +36,7 @@ export const treatmentsData = [
     icon: "ShieldAlert", // Custom or replaced with standard
     shortDescription: "Permanent, natural-looking replacement for missing teeth using premium titanium implants.",
     longDescription: "Dental implants are the gold standard for replacing missing teeth. An implant acts as a prosthetic root made of medical-grade titanium, which fuses naturally with your jawbone in a process called osseointegration. This creates an extremely secure foundation for a custom-crafted porcelain crown. Unlike traditional bridges or dentures, dental implants look, feel, and function exactly like your natural teeth, preventing bone loss and preserving your facial structure.",
-    image: "https://images.unsplash.com/photo-1606811971618-4486d14f3f99?w=800&auto=format&fit=crop&q=80",
+    image: "/images/treatment_implants.png",
     priceRange: "₹25,000 - ₹50,000 per implant",
     benefits: [
       "Restores 100% biting and chewing capacity",
@@ -67,7 +67,7 @@ export const treatmentsData = [
     icon: "Activity",
     shortDescription: "Save infected, painful teeth and restore functionality with single-visit painless root canal therapy.",
     longDescription: "Root Canal Treatment (RCT) is a highly effective procedure designed to save a severely decayed, infected, or damaged tooth rather than extracting it. When the inner pulp of a tooth becomes inflamed or infected due to deep decay or trauma, it causes severe throbbing pain. Our clinic specializes in advanced, single-visit root canals using digital rotary systems and dental microscopes, making the process faster, highly precise, and completely pain-free.",
-    image: "https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?w=800&auto=format&fit=crop&q=80",
+    image: "/images/treatment_surgery.png",
     priceRange: "₹4,000 - ₹8,500",
     benefits: [
       "Provides immediate relief from severe dental pain",
@@ -98,7 +98,7 @@ export const treatmentsData = [
     icon: "Sparkles",
     shortDescription: "Safely brighten your teeth by up to 8 shades in just 45 minutes using advanced laser bleaching.",
     longDescription: "A bright, white smile projects health, youth, and confidence. Over time, consumption of tea, coffee, turmeric, and smoking can stain enamel. Our professional in-office teeth whitening system utilizes safe, light-activated bleaching agents to break down stubborn, deep-set stains. Unlike over-the-counter kits that can damage gums or cause severe sensitivity, our treatment is fully customized, highly supervised, and delivers instant, dazzling results.",
-    image: "https://images.unsplash.com/photo-1579684389782-64d84b5e905d?w=800&auto=format&fit=crop&q=80",
+    image: "/images/treatment_whitening.png",
     priceRange: "₹7,000 - ₹15,000",
     benefits: [
       "Instant, visible results in under an hour",
@@ -129,7 +129,7 @@ export const treatmentsData = [
     icon: "Sparkles",
     shortDescription: "Customized aesthetic smile correction combining digital mockups, veneers, and alignment.",
     longDescription: "Smile Designing, or Digital Smile Design (DSD), is a highly personalized cosmetic procedure that blends science and art to create your dream smile. By analyzing your facial structure, lip symmetry, gum line, and teeth size through digital photography and 3D modeling, we create a custom blueprint of your new smile. We combine porcelain veneers, composite bonding, and gum contouring to resolve issues like chips, gaps, and severe staining, allowing you to preview your smile before treatment begins.",
-    image: "https://images.unsplash.com/photo-1513412583791-03a82b057f21?w=800&auto=format&fit=crop&q=80",
+    image: "/images/treatment_smile_design.png",
     priceRange: "₹30,000 - ₹1,50,000 (Case specific)",
     benefits: [
       "Fully customized to complement your facial features",
@@ -160,7 +160,7 @@ export const treatmentsData = [
     icon: "Heart",
     shortDescription: "Aesthetic tooth bonding, composite fillings, veneers, and contouring for flawless teeth.",
     longDescription: "Cosmetic Dentistry focuses on enhancing the overall appearance of your teeth, gums, and bite. Whether you are dealing with minor chips, structural fractures, uneven spaces, or misshapen teeth, our cosmetic procedures offer conservative and aesthetic solutions. We utilize high-quality composite bonding resins, ceramic inlays, and ultra-thin veneers to repair teeth seamlessly and create a balanced, bright smile.",
-    image: "https://images.unsplash.com/photo-1471864190281-a93a3070b6de?w=800&auto=format&fit=crop&q=80",
+    image: "/images/treatment_cosmetic.png",
     priceRange: "₹2,500 - ₹15,000 per tooth",
     benefits: [
       "Seamless blending with surrounding natural teeth",
@@ -191,7 +191,7 @@ export const treatmentsData = [
     icon: "Smile",
     shortDescription: "Clear aligners and metal/ceramic braces for correcting crooked teeth and bite misalignments.",
     longDescription: "Straighten your teeth comfortably with our modern orthodontic treatments. We offer traditional metal braces, discreet tooth-colored ceramic braces, and state-of-the-art Clear Aligners (invisible braces). Clear aligners are custom-made, removable plastic trays that gradually shift your teeth into the correct position. They are virtually invisible, letting you eat, brush, and speak normally while correcting crowded teeth, crossbites, underbites, and gaps.",
-    image: "https://images.unsplash.com/photo-1598256989800-fe5f95da9787?w=800&auto=format&fit=crop&q=80",
+    image: "/images/treatment_ortho.png",
     priceRange: "₹25,000 - ₹1,50,000",
     benefits: [
       "Discreet and invisible options like Clear Aligners",
@@ -222,7 +222,7 @@ export const treatmentsData = [
     icon: "Baby",
     shortDescription: "Gentle, child-friendly preventive dental care, dental sealants, and cavity fillings.",
     longDescription: "Our pediatric dentistry program is designed to make dental visits fun, educational, and completely stress-free for children. We focus heavily on preventive treatments like fluoride applications and dental sealants to protect young enamel from cavities. Our specialized pediatric dentist is trained to manage children's anxieties and build positive oral hygiene habits that last a lifetime, ensuring their milk teeth and emerging permanent teeth stay healthy.",
-    image: "https://images.unsplash.com/photo-1445527815219-ecbfec67492e?w=800&auto=format&fit=crop&q=80",
+    image: "/images/treatment_pediatric.png",
     priceRange: "₹800 - ₹4,000",
     benefits: [
       "Child-friendly, comforting dental environment",
@@ -253,7 +253,7 @@ export const treatmentsData = [
     icon: "ShieldAlert",
     shortDescription: "Safe and surgical extraction of impacted, painful, or misaligned wisdom teeth.",
     longDescription: "Wisdom teeth, or third molars, are the last teeth to emerge, typically in late adolescence. Often, there is not enough space in the mouth, leading to 'impacted' wisdom teeth that grow at odd angles, damage neighboring teeth, or cause painful gum infections. Our clinic performs wisdom tooth extractions with high surgical precision using local anesthesia or conscious sedation, ensuring maximum patient comfort and quick recovery times.",
-    image: "https://images.unsplash.com/photo-1598256989800-fe5f95da9787?w=800&auto=format&fit=crop&q=80",
+    image: "/images/treatment_surgery.png",
     priceRange: "₹3,500 - ₹9,000 per tooth",
     benefits: [
       "Relieves pain, jaw stiffness, and sinus pressure",
@@ -284,7 +284,7 @@ export const treatmentsData = [
     icon: "Activity",
     shortDescription: "Deep scaling, root planing, and laser therapy to treat bleeding, swollen gums and pyorrhea.",
     longDescription: "Gum health is the foundation of a healthy mouth. Gum disease (gingivitis or periodontitis) begins when plaque buildup causes inflammation of the gums, leading to bleeding, bad breath, and eventual tooth loss. We offer periodontal therapies ranging from deep scaling and root planing to advanced laser-assisted pocket sterilization. Our targeted treatments eradicate bacteria, heal infected gum tissues, and restore support to loose teeth.",
-    image: "https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?w=800&auto=format&fit=crop&q=80",
+    image: "/images/treatment_gum_treatment.png",
     priceRange: "₹2,000 - ₹12,000",
     benefits: [
       "Stops bleeding gums and chronic bad breath (halitosis)",
@@ -315,7 +315,7 @@ export const treatmentsData = [
     icon: "Award",
     shortDescription: "Premium Zirconia and E-max ceramic restorations to strengthen and replace teeth.",
     longDescription: "Restore damaged, weakened, or missing teeth with our premium crown and bridge restorations. A dental crown is a custom-fit cap that covers a damaged tooth to restore its shape, size, strength, and appearance. A dental bridge replaces one or more missing teeth by anchoring custom prosthetic crowns to adjacent healthy teeth. We utilize metal-free, high-strength Zirconia and CAD/CAM E-Max ceramics to ensure natural aesthetics and outstanding durability.",
-    image: "https://images.unsplash.com/photo-1606811971618-4486d14f3f99?w=800&auto=format&fit=crop&q=80",
+    image: "/images/treatment_crown_bridge.png",
     priceRange: "₹6,000 - ₹18,000 per unit",
     benefits: [
       "Restores natural chewing structure and appearance",
@@ -346,7 +346,7 @@ export const treatmentsData = [
     icon: "Grid",
     shortDescription: "Lightweight, comfortable, and stable custom dentures (BPS and implant-supported).",
     longDescription: "Dentures are removable dental appliances designed to replace missing teeth and surrounding tissues. We provide modern, high-comfort partial dentures (for a few missing teeth) and complete dentures (for replacing all teeth). Using advanced BPS (Bio-functional Prosthetic System) guidelines and flexible, lightweight materials, we ensure your dentures fit comfortably, look natural, and do not slip while speaking or eating. Implant-supported options are also available for maximum stability.",
-    image: "https://images.unsplash.com/photo-1629909613654-28e377c37b09?w=800&auto=format&fit=crop&q=80",
+    image: "/images/treatment_dentures.png",
     priceRange: "₹12,000 - ₹45,000",
     benefits: [
       "Improves speech and restores chewing function",
@@ -377,7 +377,7 @@ export const treatmentsData = [
     icon: "ShieldAlert",
     shortDescription: "Painless, conservative extraction of severely fractured or non-restorable teeth.",
     longDescription: "While our priority is always to save your natural teeth, there are situations where a tooth is too severely damaged, infected, or fractured to be repaired. In these cases, a gentle extraction is the best way to safeguard your overall oral health. We perform extractions with a focus on preserving the surrounding bone structure, which is crucial if you plan to replace the tooth with a dental implant in the future.",
-    image: "https://images.unsplash.com/photo-1598256989800-fe5f95da9787?w=800&auto=format&fit=crop&q=80",
+    image: "/images/treatment_surgery.png",
     priceRange: "₹1,500 - ₹4,500",
     benefits: [
       "Provides quick relief from chronic pain and severe infection",
@@ -408,7 +408,7 @@ export const treatmentsData = [
     icon: "Shield",
     shortDescription: "Fluoride treatments, cavity-preventing sealants, nightguards, and regular diagnostic scans.",
     longDescription: "Preventive dentistry is the key to maintaining a healthy smile for a lifetime. By focus on stopping dental issues before they start, we save you from future discomfort and costly dental procedures. Our preventive care program includes regular professional cleanings, fluoride applications to strengthen enamel, dental sealants to protect chewing surfaces, custom nightguards for grinding (bruxism), and high-resolution oral cancer screenings.",
-    image: "https://images.unsplash.com/photo-1471864190281-a93a3070b6de?w=800&auto=format&fit=crop&q=80",
+    image: "/images/treatment_general.png",
     priceRange: "₹1,000 - ₹5,000",
     benefits: [
       "Drastically reduces the risk of developing cavities and gum disease",
@@ -439,7 +439,7 @@ export const treatmentsData = [
     icon: "ShieldAlert",
     shortDescription: "Immediate care for knocked-out teeth, severe toothaches, jaw fractures, and dental abscesses.",
     longDescription: "A dental emergency can be frightening and painful. Whether you are dealing with a severe, throbbing toothache, a knocked-out tooth from sports, a cracked crown, or a swelling in your gums, immediate medical attention is essential. Our Ahmedabad clinic is fully prepared to handle urgent dental situations, offering same-day appointments, pain-relief treatments, root canals, and trauma management to resolve pain and protect your smile.",
-    image: "https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?w=800&auto=format&fit=crop&q=80",
+    image: "/images/treatment_surgery.png",
     priceRange: "₹1,500 - ₹8,000",
     benefits: [
       "Priority same-day appointments to relieve intense pain",

@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Search, Clock, ArrowRight, BookOpen } from 'lucide-react';
+import ImageWithFallback from '../components/Common/ImageWithFallback';
 
 // Common Components
 import SEO from '../components/Common/SEO';
@@ -126,7 +127,7 @@ export default function Blog() {
                   className="bg-white border border-slate-100 rounded-3xl overflow-hidden shadow-premium hover:shadow-premium-hover transition-all duration-300 flex flex-col justify-between group"
                 >
                   <div className="relative aspect-[16/10] overflow-hidden bg-slate-100">
-                    <img 
+                    <ImageWithFallback 
                       src={post.image} 
                       alt={post.title} 
                       className="w-full h-full object-cover group-hover:scale-102 transition-transform duration-300"

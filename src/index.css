@@ -25,27 +25,34 @@
 
 @layer components {
   .btn-primary {
-    @apply inline-flex items-center justify-center px-6 py-3 border border-transparent text-base font-medium rounded-full text-white bg-dental-aqua hover:bg-dental-aqua-dark focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-dental-aqua transition-all duration-300 shadow-premium hover:shadow-premium-hover transform hover:-translate-y-0.5 active:translate-y-0 cursor-pointer;
+    @apply inline-flex items-center justify-center px-6 py-3 border border-transparent text-base font-semibold rounded-full text-white bg-gradient-to-r from-dental-aqua to-dental-sky hover:from-dental-sky hover:to-dental-aqua focus:outline-none transition-all duration-300 shadow-premium hover:shadow-[0_15px_30px_-5px_rgba(14,165,233,0.35)] transform hover:-translate-y-0.5 active:translate-y-0 cursor-pointer;
   }
 
   .btn-secondary {
-    @apply inline-flex items-center justify-center px-6 py-3 border border-slate-200 text-base font-medium rounded-full text-dental-navy bg-white hover:bg-slate-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-dental-aqua transition-all duration-300 shadow-sm hover:shadow transform hover:-translate-y-0.5 active:translate-y-0 cursor-pointer;
+    @apply inline-flex items-center justify-center px-6 py-3 border border-slate-200/80 text-base font-semibold rounded-full text-dental-navy bg-white/80 backdrop-blur-sm hover:bg-slate-50 focus:outline-none transition-all duration-300 shadow-sm hover:shadow-md transform hover:-translate-y-0.5 active:translate-y-0 cursor-pointer;
   }
 
   .btn-accent {
-    @apply inline-flex items-center justify-center px-6 py-3 border border-transparent text-base font-medium rounded-full text-white bg-dental-turquoise hover:bg-dental-turquoise-dark focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-dental-turquoise transition-all duration-300 shadow-premium hover:shadow-premium-hover transform hover:-translate-y-0.5 active:translate-y-0 cursor-pointer;
+    @apply inline-flex items-center justify-center px-6 py-3 border border-transparent text-base font-semibold rounded-full text-white bg-gradient-to-r from-dental-turquoise to-dental-aqua hover:from-dental-aqua hover:to-dental-turquoise focus:outline-none transition-all duration-300 shadow-premium hover:shadow-[0_15px_30px_-5px_rgba(6,182,212,0.35)] transform hover:-translate-y-0.5 active:translate-y-0 cursor-pointer;
   }
 
   .btn-outline-white {
-    @apply inline-flex items-center justify-center px-6 py-3 border border-white text-base font-medium rounded-full text-white hover:bg-white hover:text-dental-navy focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-white transition-all duration-300 transform hover:-translate-y-0.5 active:translate-y-0 cursor-pointer;
+    @apply inline-flex items-center justify-center px-6 py-3 border border-white/60 text-base font-semibold rounded-full text-white hover:bg-white hover:text-dental-navy focus:outline-none transition-all duration-300 transform hover:-translate-y-0.5 active:translate-y-0 cursor-pointer;
   }
 
   .card-premium {
-    @apply bg-white border border-slate-100 rounded-3xl p-8 shadow-premium hover:shadow-premium-hover transition-all duration-300 hover:border-dental-sky/30;
+    @apply bg-white/90 backdrop-blur-md border border-slate-100/90 rounded-[2rem] p-8 shadow-premium hover:shadow-[0_20px_45px_-12px_rgba(15,23,42,0.08)] transition-all duration-500 hover:border-dental-sky/35 hover:-translate-y-1.5;
   }
 
   .glass-nav {
-    @apply bg-white/80 backdrop-blur-md border-b border-white/40;
+    @apply bg-white/70 backdrop-blur-lg border-b border-slate-100/40;
+  }
+
+  .bg-grid-pattern {
+    background-size: 36px 36px;
+    background-image: 
+      linear-gradient(to right, rgba(14, 165, 233, 0.035) 1px, transparent 1px),
+      linear-gradient(to bottom, rgba(14, 165, 233, 0.035) 1px, transparent 1px);
   }
 }
 

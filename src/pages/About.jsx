@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { ShieldCheck, Heart, Award, Target, Check, Calendar, Phone, Sparkles } from 'lucide-react';
+import ImageWithFallback from '../components/Common/ImageWithFallback';
 
 // Common Components
 import SEO from '../components/Common/SEO';
@@ -62,8 +63,8 @@ export default function About() {
             {/* Collage Section */}
             <div className="lg:col-span-5 relative flex justify-center">
               <div className="relative w-full max-w-[380px] aspect-[4/5] rounded-[36px] overflow-hidden shadow-2xl border-4 border-white bg-slate-100">
-                <img 
-                  src="https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?w=500&auto=format&fit=crop&q=80" 
+                <ImageWithFallback 
+                  src="/images/dental_chair.png" 
                   alt="Tarasaka Dental Clinic Facility"
                   className="w-full h-full object-cover"
                 />
@@ -211,8 +212,8 @@ export default function About() {
 
             {/* Collage Right */}
             <div className="lg:col-span-5 relative w-full aspect-[4/3] rounded-3xl overflow-hidden shadow-premium border border-slate-100">
-              <img 
-                src="https://images.unsplash.com/photo-1471864190281-a93a3070b6de?w=600&auto=format&fit=crop&q=80" 
+              <ImageWithFallback 
+                src="/images/sterilization.png" 
                 alt="Autoclave Sterilization Clinic Layout" 
                 className="w-full h-full object-cover"
               />

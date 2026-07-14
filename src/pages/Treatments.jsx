@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Search, Stethoscope, Sparkles, Activity, ShieldAlert, Award, Grid, Clock, ArrowRight, Baby, Smile, Heart, Shield, ShieldCheck, Eye, Scan, Radio, Zap, Monitor } from 'lucide-react';
+import ImageWithFallback from '../components/Common/ImageWithFallback';
 
 // Common Components
 import SEO from '../components/Common/SEO';
@@ -162,7 +163,7 @@ export default function Treatments() {
                     className="bg-white border border-slate-100 rounded-3xl overflow-hidden shadow-premium hover:shadow-premium-hover transition-all duration-300 flex flex-col justify-between group hover:border-dental-sky/20"
                   >
                     <div className="relative aspect-[16/10] overflow-hidden">
-                      <img 
+                      <ImageWithFallback 
                         src={t.image} 
                         alt={`${t.title} Specialist in Ahmedabad`} 
                         className="w-full h-full object-cover group-hover:scale-103 transition-transform duration-300"

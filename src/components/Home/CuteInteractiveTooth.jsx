@@ -73,7 +73,7 @@ export default function CuteInteractiveTooth() {
             initial={{ opacity: 0, y: 10, scale: 0.8 }}
             animate={{ opacity: 1, y: 0, scale: 1 }}
             exit={{ opacity: 0, y: 10, scale: 0.8 }}
-            className="absolute -top-16 bg-white text-dental-navy border border-slate-100 px-3.5 py-1.5 rounded-2xl shadow-lg text-[10px] font-bold text-center z-30 whitespace-nowrap"
+            className="absolute -top-20 bg-white text-dental-navy border border-slate-100 px-3.5 py-1.5 rounded-2xl shadow-lg text-[10px] font-bold text-center z-30 whitespace-nowrap"
           >
             {dentalTips[tipIndex]}
             {/* Speech bubble pointer tip */}
@@ -87,7 +87,7 @@ export default function CuteInteractiveTooth() {
         onClick={handleInteraction}
         whileHover={{ scale: 1.05 }}
         whileTap={{ scale: 0.95 }}
-        className="w-28 h-28 relative z-20"
+        className="w-36 h-36 relative z-20"
       >
         <svg
           viewBox="0 0 100 100"

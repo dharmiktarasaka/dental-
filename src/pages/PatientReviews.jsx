@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Star, ShieldCheck, Heart, Calendar } from 'lucide-react';
+import ImageWithFallback from '../components/Common/ImageWithFallback';
 
 // Common Components
 import SEO from '../components/Common/SEO';
@@ -126,7 +127,7 @@ export default function PatientReviews() {
                 </div>
 
                 <div className="flex items-center gap-3 pt-6 border-t border-slate-100 mt-6">
-                  <img src={item.avatar} alt={item.name} className="w-10 h-10 rounded-full object-cover" />
+                  <ImageWithFallback src={item.avatar} alt={item.name} className="w-10 h-10 rounded-full object-cover" />
                   <div>
                     <h4 className="font-bold text-xs text-dental-navy leading-none">{item.name}</h4>
                     <span className="text-[9px] text-slate-400 font-bold uppercase tracking-wider block mt-1">Verified Care Profile ({item.treatment})</span>

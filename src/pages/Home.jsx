@@ -12,6 +12,8 @@ import SEO from '../components/Common/SEO';
 import BeforeAfterSlider from '../components/Common/BeforeAfterSlider';
 import QuickAppointment from '../components/Home/QuickAppointment';
 import CuteInteractiveTooth from '../components/Home/CuteInteractiveTooth';
+import DentalFloatingBg from '../components/Home/DentalFloatingBg';
+import ImageWithFallback from '../components/Common/ImageWithFallback';
 
 // Static Data
 import { treatmentsData } from '../data/treatmentsData';
@@ -86,7 +88,10 @@ export default function Home() {
       />
 
       {/* 1. Hero Section */}
-      <section className="relative overflow-hidden bg-gradient-to-b from-slate-50 via-dental-sky/5 to-slate-50 py-16 lg:py-24">
+      <section className="relative overflow-hidden bg-gradient-to-b from-slate-50 via-dental-sky/5 to-slate-50 py-16 lg:py-24 bg-grid-pattern">
+        {/* Subtly animated background vector outlines */}
+        <DentalFloatingBg />
+
         {/* Animated Background Graphics (Subtle, professional) */}
         <div className="absolute top-20 left-10 w-72 h-72 bg-dental-sky/15 rounded-full blur-3xl -z-10 animate-pulse"></div>
         <div className="absolute bottom-20 right-10 w-96 h-96 bg-dental-mint/10 rounded-full blur-3xl -z-10"></div>
@@ -103,12 +108,12 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-4 md:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
             
-            {/* Hero Column Left: Title & Trust Badges */}
+             {/* Hero Column Left: Title & Trust Badges */}
             <div className="lg:col-span-7 space-y-6 text-center lg:text-left">
-              <div className="inline-flex items-center gap-1 bg-white border border-slate-200 px-3.5 py-1.5 rounded-full shadow-sm text-xs font-semibold text-slate-700">
+              <div className="inline-flex items-center gap-2 bg-gradient-to-r from-dental-aqua/10 via-dental-sky/5 to-dental-sky/10 border border-dental-aqua/20 px-4 py-2 rounded-full shadow-sm text-xs font-bold text-slate-700">
                 <Star className="w-4 h-4 fill-amber-400 text-amber-400" />
                 <span className="text-dental-navy font-bold">{googleRatingStats.averageRating} Rating</span>
-                <span className="text-slate-400">({googleRatingStats.totalReviews} Google Reviews)</span>
+                <span className="text-slate-400">({googleRatingStats.totalReviews} Verified Reviews)</span>
               </div>
 
               <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black text-dental-navy leading-tight">
@@ -140,23 +145,23 @@ export default function Home() {
                 </a>
               </div>
 
-              {/* Trust Statistics Grid */}
-              <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 pt-6 border-t border-slate-200/60 max-w-lg mx-auto lg:mx-0">
-                <div className="text-center lg:text-left">
-                  <span className="block text-2xl md:text-3xl font-extrabold text-dental-navy font-display">12+</span>
-                  <span className="text-[10px] text-slate-400 font-bold uppercase tracking-wider">Years Exp</span>
+              {/* Trust Statistics Glass Cards */}
+              <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 pt-6 max-w-xl mx-auto lg:mx-0">
+                <div className="bg-white/60 backdrop-blur-sm border border-slate-100/80 p-4 rounded-[20px] text-center lg:text-left shadow-sm">
+                  <span className="block text-2xl md:text-3xl font-black bg-gradient-to-r from-dental-aqua to-dental-sky bg-clip-text text-transparent font-display">12+</span>
+                  <span className="text-[9px] text-slate-400 font-extrabold uppercase tracking-wider block mt-1 leading-none">Years Exp</span>
                 </div>
-                <div className="text-center lg:text-left">
-                  <span className="block text-2xl md:text-3xl font-extrabold text-dental-navy font-display">15k+</span>
-                  <span className="text-[10px] text-slate-400 font-bold uppercase tracking-wider">Happy Patients</span>
+                <div className="bg-white/60 backdrop-blur-sm border border-slate-100/80 p-4 rounded-[20px] text-center lg:text-left shadow-sm">
+                  <span className="block text-2xl md:text-3xl font-black bg-gradient-to-r from-dental-aqua to-dental-sky bg-clip-text text-transparent font-display">15k+</span>
+                  <span className="text-[9px] text-slate-400 font-extrabold uppercase tracking-wider block mt-1 leading-none">Patients</span>
                 </div>
-                <div className="text-center lg:text-left">
-                  <span className="block text-2xl md:text-3xl font-extrabold text-dental-navy font-display">99.8%</span>
-                  <span className="text-[10px] text-slate-400 font-bold uppercase tracking-wider">Success Rate</span>
+                <div className="bg-white/60 backdrop-blur-sm border border-slate-100/80 p-4 rounded-[20px] text-center lg:text-left shadow-sm">
+                  <span className="block text-2xl md:text-3xl font-black bg-gradient-to-r from-dental-aqua to-dental-sky bg-clip-text text-transparent font-display">99.8%</span>
+                  <span className="text-[9px] text-slate-400 font-extrabold uppercase tracking-wider block mt-1 leading-none">Success</span>
                 </div>
-                <div className="text-center lg:text-left">
-                  <span className="block text-2xl md:text-3xl font-extrabold text-dental-navy font-display">100%</span>
-                  <span className="text-[10px] text-slate-400 font-bold uppercase tracking-wider">MDS Doctors</span>
+                <div className="bg-white/60 backdrop-blur-sm border border-slate-100/80 p-4 rounded-[20px] text-center lg:text-left shadow-sm">
+                  <span className="block text-2xl md:text-3xl font-black bg-gradient-to-r from-dental-aqua to-dental-sky bg-clip-text text-transparent font-display">100%</span>
+                  <span className="text-[9px] text-slate-400 font-extrabold uppercase tracking-wider block mt-1 leading-none">MDS Staff</span>
                 </div>
               </div>
             </div>
@@ -164,15 +169,15 @@ export default function Home() {
             {/* Hero Column Right: Image Frame & Overlays */}
             <div className="lg:col-span-5 relative mt-6 lg:mt-0 flex justify-center">
               <div className="relative w-full max-w-[420px] aspect-[4/5] rounded-[36px] overflow-hidden shadow-2xl border-4 border-white bg-slate-100">
-                <img 
-                  src="https://images.unsplash.com/photo-1629909613654-28e377c37b09?w=600&auto=format&fit=crop&q=80" 
+                <ImageWithFallback 
+                  src="/images/clinic_hero.png" 
                   alt="Modern Dental Clinic in Ahmedabad"
                   className="w-full h-full object-cover"
                 />
               </div>
 
-              {/* Floating review card */}
-              <div className="absolute -left-6 bottom-10 bg-white/90 backdrop-blur-md border border-slate-100 p-4 rounded-2xl shadow-premium flex items-center gap-3 hidden sm:flex max-w-[200px]">
+              {/* Floating review card - shifted to the right side */}
+              <div className="absolute -right-6 bottom-16 bg-white/90 backdrop-blur-md border border-slate-100 p-4 rounded-2xl shadow-premium flex items-center gap-3 hidden sm:flex max-w-[200px]">
                 <div className="w-8 h-8 bg-dental-sky-light rounded-full flex items-center justify-center">
                   <Heart className="w-4 h-4 text-dental-aqua fill-dental-aqua" />
                 </div>
@@ -182,8 +187,8 @@ export default function Home() {
                 </div>
               </div>
 
-              {/* Cute Interactive Tooth Character standing next to the photo frame */}
-              <div className="absolute -right-8 -bottom-6 z-30 hidden sm:block">
+              {/* Cute Interactive Tooth Character standing on the left side of the photo frame */}
+              <div className="absolute -left-12 -bottom-12 z-30 hidden sm:block">
                 <CuteInteractiveTooth />
               </div>
             </div>
@@ -221,7 +226,7 @@ export default function Home() {
       </section>
 
       {/* 3. Why Choose Our Dental Clinic */}
-      <section className="py-20 bg-slate-50">
+      <section className="py-20 bg-slate-50 bg-grid-pattern">
         <div className="max-w-7xl mx-auto px-4 md:px-8">
           <div className="text-center max-w-2xl mx-auto mb-16 space-y-3">
             <span className="text-xs text-dental-aqua font-bold uppercase tracking-widest bg-dental-sky/10 px-3.5 py-1.5 rounded-full inline-block">The Tarasaka Advantage</span>
@@ -233,7 +238,7 @@ export default function Home() {
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
             {whyChooseUs.map((item, idx) => (
-              <div key={idx} className="card-premium group hover:scale-[1.02] duration-200">
+              <div key={idx} className="card-premium group">
                 <div className="w-12 h-12 bg-dental-sky-light text-dental-aqua rounded-2xl flex items-center justify-center mb-5 group-hover:bg-dental-aqua group-hover:text-white transition-all duration-300">
                   <item.icon className="w-6 h-6" />
                 </div>
@@ -263,7 +268,7 @@ export default function Home() {
               return (
                 <div key={t.id} className="bg-white border border-slate-100 rounded-3xl overflow-hidden shadow-premium hover:shadow-premium-hover transition-all duration-300 flex flex-col group hover:border-dental-sky/20">
                   <div className="relative aspect-[16/10] overflow-hidden">
-                    <img 
+                    <ImageWithFallback 
                       src={t.image} 
                       alt={`${t.title} Specialist in Ahmedabad`} 
                       className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
@@ -305,8 +310,8 @@ export default function Home() {
             {/* Gallery / Images Grid */}
             <div className="lg:col-span-5 grid grid-cols-2 gap-4">
               <div className="space-y-4">
-                <img 
-                  src="https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?w=400&auto=format&fit=crop&q=80" 
+                <ImageWithFallback 
+                  src="/images/dental_chair.png" 
                   alt="Modern Dental Chair"
                   className="rounded-3xl shadow-md aspect-[4/5] object-cover"
                 />
@@ -321,8 +326,8 @@ export default function Home() {
                   <span className="block text-2xl font-bold text-dental-navy font-display">4.9 Star</span>
                   <span className="text-[9px] uppercase tracking-wider text-slate-400 font-bold">Google Rated</span>
                 </div>
-                <img 
-                  src="https://images.unsplash.com/photo-1471864190281-a93a3070b6de?w=400&auto=format&fit=crop&q=80" 
+                <ImageWithFallback 
+                  src="/images/sterilization.png" 
                   alt="Clinical Equipment Setup"
                   className="rounded-3xl shadow-md aspect-[4/5] object-cover"
                 />
@@ -382,7 +387,7 @@ export default function Home() {
             {doctorsData.map((doc) => (
               <div key={doc.slug} className="bg-slate-50 border border-slate-100 rounded-3xl overflow-hidden shadow-premium hover:shadow-premium-hover transition-all duration-300 flex flex-col group">
                 <div className="aspect-[4/3] overflow-hidden bg-slate-200 relative">
-                  <img 
+                  <ImageWithFallback 
                     src={doc.image} 
                     alt={doc.name} 
                     className="w-full h-full object-cover group-hover:scale-102 transition-transform duration-300"
@@ -479,8 +484,8 @@ export default function Home() {
             {/* Draggable Slider Wrapper */}
             <div className="lg:col-span-7 w-full max-w-lg mx-auto">
               <BeforeAfterSlider 
-                beforeImage="https://images.unsplash.com/photo-1598256989800-fe5f95da9787?w=600&auto=format&fit=crop&q=80"
-                afterImage="https://images.unsplash.com/photo-1579684389782-64d84b5e905d?w=600&auto=format&fit=crop&q=80"
+                beforeImage="/images/treatment_ortho.png"
+                afterImage="/images/treatment_cosmetic.png"
                 beforeLabel="Crooked / Stained Teeth"
                 afterLabel="Perfect Whitened Smile"
               />
@@ -547,7 +552,7 @@ export default function Home() {
                   </p>
                 </div>
                 <div className="flex items-center gap-3 pt-6 border-t border-slate-200/60 mt-6">
-                  <img src={item.avatar} alt={item.name} className="w-10 h-10 rounded-full object-cover" />
+                  <ImageWithFallback src={item.avatar} alt={item.name} className="w-10 h-10 rounded-full object-cover" />
                   <div>
                     <h4 className="font-bold text-xs text-dental-navy leading-none">{item.name}</h4>
                     <span className="text-[10px] text-slate-400 font-semibold uppercase mt-1 block">Treatment: {item.treatment}</span>
@@ -613,8 +618,8 @@ export default function Home() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {blogData.slice(0, 3).map((post) => (
               <div key={post.slug} className="bg-slate-50 border border-slate-100 rounded-3xl overflow-hidden shadow-sm flex flex-col group">
-                <div className="relative aspect-[16/10] overflow-hidden">
-                  <img src={post.image} alt={post.title} className="w-full h-full object-cover group-hover:scale-102 transition-transform duration-300" />
+                <div className="relative aspect-[16/10] overflow-hidden bg-slate-100">
+                  <ImageWithFallback src={post.image} alt={post.title} className="w-full h-full object-cover group-hover:scale-102 transition-transform duration-300" />
                 </div>
                 <div className="p-6 flex flex-col flex-grow space-y-2">
                   <span className="text-[10px] text-dental-aqua font-bold uppercase tracking-wider block">{post.category}</span>

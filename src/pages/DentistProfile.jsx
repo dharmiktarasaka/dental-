@@ -1,6 +1,7 @@
 import React from 'react';
 import { useParams, Link, Navigate } from 'react-router-dom';
 import { Award, Calendar, Clock, Heart, ShieldCheck, Check, Phone, MessageSquare } from 'lucide-react';
+import ImageWithFallback from '../components/Common/ImageWithFallback';
 
 // Common Components
 import SEO from '../components/Common/SEO';
@@ -77,7 +78,7 @@ export default function DentistProfile() {
             {/* Left Photo & Schedule Column (4 cols) */}
             <div className="lg:col-span-4 space-y-6">
               <div className="w-full aspect-[4/5] rounded-[36px] overflow-hidden shadow-xl border-4 border-white bg-slate-50">
-                <img 
+                <ImageWithFallback 
                   src={doctor.image} 
                   alt={doctor.name} 
                   className="w-full h-full object-cover"

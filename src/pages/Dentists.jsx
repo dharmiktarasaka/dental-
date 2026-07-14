@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Award, Calendar, CheckCircle, Clock, Heart, ShieldAlert } from 'lucide-react';
+import ImageWithFallback from '../components/Common/ImageWithFallback';
 
 // Common Components
 import SEO from '../components/Common/SEO';
@@ -63,7 +64,7 @@ export default function Dentists() {
               >
                 {/* Photo Header */}
                 <div className="aspect-[4/3] overflow-hidden bg-slate-100 relative">
-                  <img 
+                  <ImageWithFallback 
                     src={doc.image} 
                     alt={`${doc.name} - ${doc.specialization}`} 
                     className="w-full h-full object-cover group-hover:scale-102 transition-transform duration-300"

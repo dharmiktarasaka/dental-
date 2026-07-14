@@ -17,33 +17,33 @@ export default function BeforeAfter() {
     {
       title: "Full Smile Designing",
       description: "Corrected front spacing, discoloration, and structural chips using custom, ultra-thin porcelain veneers.",
-      before: "https://images.unsplash.com/photo-1598256989800-fe5f95da9787?w=600&auto=format&fit=crop&q=80",
-      after: "https://images.unsplash.com/photo-1579684389782-64d84b5e905d?w=600&auto=format&fit=crop&q=80",
+      before: "/images/treatment_ortho.png",
+      after: "/images/treatment_cosmetic.png",
       beforeLabel: "Spacing & Stains",
       afterLabel: "Veneers Restored"
     },
     {
       title: "In-Office Teeth Whitening",
       description: "Brightened natural enamel by 6 shades in under 45 minutes using blue LED-activated bleaching gel.",
-      before: "https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?w=600&auto=format&fit=crop&q=80",
-      after: "https://images.unsplash.com/photo-1513412583791-03a82b057f21?w=600&auto=format&fit=crop&q=80",
+      before: "/images/treatment_general.png",
+      after: "/images/treatment_whitening.png",
       beforeLabel: "Extrinsic Yellow Stains",
       afterLabel: "Bleached Luster"
     },
     {
       title: "Braces & Aligners Alignment",
       description: "Resolved severe crowding and crossbite in an adult patient over a 14-month clear aligner progression.",
-      before: "https://images.unsplash.com/photo-1598256989800-fe5f95da9787?w=600&auto=format&fit=crop&q=80",
-      after: "https://images.unsplash.com/photo-1629909613654-28e377c37b09?w=600&auto=format&fit=crop&q=80",
+      before: "/images/treatment_ortho.png",
+      after: "/images/treatment_cosmetic.png",
       beforeLabel: "Crowded Lower Bite",
       afterLabel: "Aligned Arch"
     },
     {
       title: "Single Tooth Dental Implant",
       description: "Replaced a fractured, non-restorable molar with a titanium implant and custom-fit E-Max ceramic crown.",
-      before: "https://images.unsplash.com/photo-1606811971618-4486d14f3f99?w=600&auto=format&fit=crop&q=80",
-      after: "https://images.unsplash.com/photo-1606811971618-4486d14f3f99?w=600&auto=format&fit=crop&q=80", // Standard implant placeholder
-      beforeLabel: "Missing Molar Tooth",
+      before: "/images/treatment_surgery.png",
+      after: "/images/treatment_implants.png",
+      beforeLabel: "Missing Molar / Gap",
       afterLabel: "Implant Restored"
     }
   ];

@@ -6,6 +6,7 @@ import { Check, Calendar, Phone, MessageSquare, ChevronDown, ChevronUp, AlertCir
 import SEO from '../components/Common/SEO';
 import Breadcrumbs from '../components/Common/Breadcrumbs';
 import QuickAppointment from '../components/Home/QuickAppointment';
+import ImageWithFallback from '../components/Common/ImageWithFallback';
 
 // Static Data
 import { treatmentsData } from '../data/treatmentsData';
@@ -90,7 +91,7 @@ export default function TreatmentDetails({ treatmentId }) {
               
               {/* Image banner */}
               <div className="w-full aspect-[16/9] rounded-3xl overflow-hidden shadow-md bg-slate-100 border border-slate-100">
-                <img 
+                <ImageWithFallback 
                   src={treatment.image} 
                   alt={`${treatment.title} Dental Surgery`} 
                   className="w-full h-full object-cover"

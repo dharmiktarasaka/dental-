@@ -6,7 +6,7 @@ export const doctorsData = [
     qualification: "MDS - Prosthodontics & Crown Bridge, Implantology",
     specialization: "Dental Implants & Full Mouth Rehabilitation Specialist",
     experience: 12,
-    image: "https://images.unsplash.com/photo-1622253692010-333f2da6031d?w=400&auto=format&fit=crop&q=80",
+    image: "/images/doctor_aarav.png",
     bio: "Dr. Aarav Patel is a highly skilled Prosthodontist and Implantologist with over 12 years of clinical excellence. Having graduated from premium government institutions and undergone specialized training in Germany, he is renowned for advanced computer-guided dental implants and full-mouth dental reconstructions. Dr. Patel takes a gentle, patient-first approach to restore missing teeth comfortably.",
     achievements: [
       "Certified Implantologist (ITI - International Team for Implantology, Switzerland)",
@@ -28,7 +28,7 @@ export const doctorsData = [
     qualification: "MDS - Conservative Dentistry & Endodontics",
     specialization: "Single-Visit Root Canal Treatment & Cosmetic Specialist",
     experience: 8,
-    image: "https://images.unsplash.com/photo-1594824813573-246434de83fb?w=400&auto=format&fit=crop&q=80",
+    image: "/images/doctor_ananya.png",
     bio: "Dr. Ananya Sharma is a specialized Endodontist dedicated to saving teeth and crafting beautiful smiles. She has successfully performed over 5,000 single-visit root canals using advanced digital rotary systems and dental microscopes. She is also a smile styling expert, customizing porcelain veneers and laser teeth whitening procedures to enhance natural tooth aesthetics.",
     achievements: [
       "Fellowship in Aesthetic Dentistry (FAD, Germany)",
@@ -50,7 +50,7 @@ export const doctorsData = [
     qualification: "MDS - Orthodontics & Dentofacial Orthopedics",
     specialization: "Braces & Invisible Aligner Specialist",
     experience: 10,
-    image: "https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?w=400&auto=format&fit=crop&q=80",
+    image: "/images/doctor_rohan.png",
     bio: "Dr. Rohan Mehta specializes in correcting misaligned teeth and jaw growth issues for children, teens, and adults. As a certified Invisalign and clear aligners provider, Dr. Mehta leverages advanced digital 3D scans to map out precise, comfortable, and invisible orthodontic plans that yield beautiful, symmetrical smiles.",
     achievements: [
       "Certified Platinum Invisalign Provider, India",

@@ -1,6 +1,7 @@
 import React from 'react';
 import { useParams, Link, Navigate } from 'react-router-dom';
 import { Calendar, Clock, Phone, ArrowLeft, BookOpen, User } from 'lucide-react';
+import ImageWithFallback from '../components/Common/ImageWithFallback';
 
 // Common Components
 import SEO from '../components/Common/SEO';
@@ -94,7 +95,7 @@ export default function BlogArticle() {
               
               {/* Banner Image */}
               <div className="w-full aspect-[16/9] rounded-3xl overflow-hidden shadow-md bg-slate-50 border border-slate-100">
-                <img 
+                <ImageWithFallback 
                   src={post.image} 
                   alt={post.title} 
                   className="w-full h-full object-cover"
@@ -148,7 +149,7 @@ export default function BlogArticle() {
                       to={`/blog-dental-care/${p.slug}`}
                       className="group flex gap-3 hover:bg-white p-2 rounded-xl transition-all duration-150 border border-transparent hover:border-slate-100 hover:shadow-sm"
                     >
-                      <img 
+                      <ImageWithFallback 
                         src={p.image} 
                         alt={p.title} 
                         className="w-16 h-12 rounded-lg object-cover flex-shrink-0 bg-slate-200" 

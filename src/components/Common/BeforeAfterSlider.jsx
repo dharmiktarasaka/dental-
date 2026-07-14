@@ -1,4 +1,5 @@
 import React, { useState, useRef, useEffect } from 'react';
+import ImageWithFallback from './ImageWithFallback';
 import { Sparkles } from 'lucide-react';
 
 export default function BeforeAfterSlider({ 
@@ -55,7 +56,7 @@ export default function BeforeAfterSlider({
         onPointerMove={handlePointerMove}
       >
         {/* After Image (Background) */}
-        <img 
+        <ImageWithFallback 
           src={afterImage} 
           alt={afterLabel}
           className="absolute inset-0 w-full h-full object-cover select-none pointer-events-none"
@@ -69,7 +70,7 @@ export default function BeforeAfterSlider({
           className="absolute inset-0 w-full h-full object-cover select-none pointer-events-none"
           style={{ clipPath: `polygon(0 0, ${sliderPosition}% 0, ${sliderPosition}% 100%, 0 100%)` }}
         >
-          <img 
+          <ImageWithFallback 
             src={beforeImage} 
             alt={beforeLabel}
             className="absolute inset-0 w-full h-full object-cover select-none pointer-events-none"
