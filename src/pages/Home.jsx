@@ -11,6 +11,7 @@ import {
 import SEO from '../components/Common/SEO';
 import BeforeAfterSlider from '../components/Common/BeforeAfterSlider';
 import QuickAppointment from '../components/Home/QuickAppointment';
+import CuteInteractiveTooth from '../components/Home/CuteInteractiveTooth';
 
 // Static Data
 import { treatmentsData } from '../data/treatmentsData';
@@ -179,6 +180,11 @@ export default function Home() {
                   <span className="block font-bold text-dental-navy">Pain-Free Tech</span>
                   <span className="text-slate-400 text-[10px]">Gentle treatment approach</span>
                 </div>
+              </div>
+
+              {/* Cute Interactive Tooth Character standing next to the photo frame */}
+              <div className="absolute -right-8 -bottom-6 z-30 hidden sm:block">
+                <CuteInteractiveTooth />
               </div>
             </div>
 
